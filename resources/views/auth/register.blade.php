@@ -9,16 +9,16 @@
 <div class="row">
     <div class="col-sm-6 offset-sm-3">
         
-        {!!Form::open(['route'=>'sigun.post'])!!}
+        {!!Form::open(['route'=>'signup.post'])!!}
         
         <div class="form-group">
             {!! Form::label('name','Name') !!}
-            {!! Form:text('name',old('name'),['class'=>'form-control']) !!}
+            {!! Form::text('name',old('name'),['class'=>'form-control']) !!}
         </div>
         
         <div class="form-group">
             {!! Form::label('email','Email') !!}
-            {!! Form:email('email',old('email'),['class'=>'form-control']) !!}
+            {!! Form::email('email',old('email'),['class'=>'form-control']) !!}
         </div>
         
         <div class="form-group">
@@ -28,7 +28,7 @@
         
         <div class="form-group">
             {!! Form::label('password_confirmation','Confirmation') !!}
-            {!! Form:password('password_confirmation',['class'=>'form-control']) !!}
+            {!! Form::password('password_confirmation',['class'=>'form-control']) !!}
         </div>
         
         {!! Form::submit('Sign up',['class='=>'btn btn-primary btn-block']) !!}
